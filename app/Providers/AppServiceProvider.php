@@ -25,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Event::listen(function(\Laravel\Reverb\Events\MessageReceived $event){
             \Log::debug("EBANII LARAVEL, data:" . $event->message);
+            
         });
     }
 }

@@ -22,11 +22,11 @@ window.Echo.channel('frontend').listenToAll((e)=>{
     console.error('suka blyat', e);
 });
 
-// var channel = window.Echo.private('mmf-connection');
+var channel = window.Echo.private('mmf-connection');
 
-// setInterval(() => {
-//     channel.whisper('connect', {
-//         user_id: 1,
-//         username: 'John Doe',
-//     })
-// }, 5000);
+setInterval(() => {
+    channel.whisper('connect', {
+        user_id: 1,
+        username: 'John Doe',
+    })
+}, 5000);
